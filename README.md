@@ -2,7 +2,7 @@
 
 Portafolio profesional.
 
-**Live:** *Se actualizará después del deploy*
+**Live:** [fernando-monje.cofoundy.dev](https://fernando-monje.cofoundy.dev/)
 
 ## Tech Stack
 
