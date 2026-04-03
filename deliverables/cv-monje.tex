@@ -1,0 +1,138 @@
+% Harvard-Format Professional CV — Fernando Monje Bolivar
+% Compile with: xelatex cv-monje.tex
+
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.6in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+% --- Fonts (macOS system fonts — always available) ---
+\setmainfont{Times New Roman}
+\setsansfont{Helvetica Neue}
+
+% --- Colors (subtle, Harvard-appropriate) ---
+\definecolor{headrule}{HTML}{2c3e50}
+\definecolor{linkblue}{HTML}{1a5276}
+
+% --- Hyperlinks ---
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue, pdfborder={0 0 0}}
+
+% --- Section Formatting (Harvard style: centered, bold, with rules) ---
+\titleformat{\section}
+  {\large\bfseries\centering}
+  {}
+  {0em}
+  {\vspace{-0.4em}\hrulefill\quad}[\quad\hrulefill\vspace{-0.4em}]
+\titlespacing{\section}{0pt}{0.6em}{0.3em}
+
+% --- List Formatting (tight bullets) ---
+\setlist[itemize]{nosep, left=0pt, label=\textbullet, itemsep=1pt, topsep=2pt}
+
+% --- No page numbers ---
+\pagestyle{empty}
+
+% --- Custom Commands ---
+\newcommand{\entry}[4]{%
+  \noindent\textbf{#1} \hfill #2 \par\nopagebreak
+  \textit{#3} \hfill \textit{#4} \par\nopagebreak
+}
+
+\begin{document}
+
+% ============================================
+% HEADER
+% ============================================
+\begin{center}
+  {\LARGE\bfseries Fernando Alexander Monje Bolivar} \\[4pt]
+  \faIcon{map-marker-alt}\enspace Loreto, Perú
+  \quad\faIcon{envelope}\enspace \href{mailto:Fernando.monje.bolivar@gmail.com}{Fernando.monje.bolivar@gmail.com}
+  \\[2pt]
+  \faIcon{linkedin}\enspace \href{https://linkedin.com/in/nanoamonje}{linkedin.com/in/nanoamonje}
+  \quad\faIcon{globe}\enspace \href{https://fernandomonje.cofoundy.dev}{fernandomonje.cofoundy.dev}
+\end{center}
+
+\vspace{-0.4em}
+\noindent\rule{\textwidth}{0.8pt}
+\vspace{-0.8em}
+
+% ============================================
+% EDUCACIÓN
+% ============================================
+\section{Educación}
+
+\entry{Universidad Católica San Pablo}{Arequipa, Perú}{Licenciado en Psicología — Colegiado C.Ps.P. 61795}{2013 -- 2024}
+\begin{itemize}
+  \item Desarrolló investigación de tesis en el Laboratorio de Neurociencia utilizando EEG y análisis de señales electrofisiológicas
+  \item Completó formación complementaria en neurociencia, psicofarmacología y evaluación cognitiva
+\end{itemize}
+\vspace{0.3em}
+
+% ============================================
+% EXPERIENCIA
+% ============================================
+\section{Experiencia Profesional}
+
+\entry{Hospital Santa Clotilde, MINSA}{Loreto, Perú}{Psicólogo Clínico — SERUMS}{2025 -- Presente}
+\begin{itemize}
+  \item Brinda atención psicológica clínica a comunidades indígenas en la Amazonía peruana, atendiendo 50+ pacientes en contextos de alta vulnerabilidad
+  \item Diseña e implementa intervenciones de salud mental adaptadas a poblaciones con recursos limitados y diversidad lingüística (kichwa, quechua)
+  \item Coordina campañas de prevención y promoción de salud mental en comunidades rurales a lo largo del río Napo
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Centro Psiquiátrico y Psicológico Psicotherapy}{Arequipa, Perú}{Psicólogo Clínico}{2022 -- Presente}
+\begin{itemize}
+  \item Realiza evaluaciones psicológicas y elabora informes clínicos para 30+ pacientes, aplicando instrumentos estandarizados
+  \item Facilita acompañamiento terapéutico individual con enfoque cognitivo-conductual, logrando adherencia al tratamiento en 80\% de los casos
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Universidad Católica San Pablo}{Arequipa, Perú}{Investigador de Tesis — Laboratorio de Neurociencia}{2023 -- 2024}
+\begin{itemize}
+  \item Diseñó y ejecutó protocolos experimentales de electroencefalografía (EEG) para análisis de señales electrofisiológicas
+  \item Programó 10+ experimentos con Python, MATLAB y PsychoPy, automatizando la recolección y procesamiento de datos
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Universidad Católica San Pablo}{Arequipa, Perú}{Asistente de Investigación — Laboratorio de Neurociencia}{2022 -- 2023}
+\begin{itemize}
+  \item Procesó y analizó datos electrofisiológicos utilizando R, JASP y Jamovi, contribuyendo a 2 proyectos de investigación
+\end{itemize}
+\vspace{0.3em}
+
+\entry{Educa Impacta Crece (EIC)}{Arequipa, Perú}{Psicólogo Educativo}{2021 -- 2022}
+\begin{itemize}
+  \item Facilitó actividades formativas y preventivas en salud mental para 200+ jóvenes en contexto educativo
+\end{itemize}
+\vspace{0.3em}
+
+\entry{UCSP — Dirección de Desarrollo y Gestión Social}{Arequipa, Perú}{Coordinador de Proyectos Sociales}{2021 -- 2022}
+\begin{itemize}
+  \item Coordinó 3+ proyectos comunitarios universitarios, articulando equipos interdisciplinarios de estudiantes y docentes
+\end{itemize}
+\vspace{0.3em}
+
+\entry{G \& D Foster Home}{Eugene, Oregon, EE.\,UU.}{Asistente Administrativo y Atención al Paciente}{2014 -- 2017}
+\begin{itemize}
+  \item Gestionó documentación administrativa y brindó atención directa a residentes en hogar de acogida durante 3 años
+\end{itemize}
+\vspace{0.3em}
+
+% ============================================
+% HABILIDADES
+% ============================================
+\section{Habilidades e Idiomas}
+
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{Técnicas:} & Evaluación Psicológica, EEG/Electrofisiología, Python, MATLAB, PsychoPy, R, JASP, Jamovi, Microsoft Office, Google Workspace, Adobe, Anaconda \\
+\textbf{Clínicas:} & Acompañamiento Terapéutico, Psicofarmacología, Evaluación Cognitiva, Psicología Organizacional, Seguridad Ocupacional \\
+\textbf{Idiomas:} & Español (nativo), Inglés (intermedio-avanzado), Portugués (básico), Quechua (básico), Kichwa (básico) \\
+\end{tabularx}
+
+\end{document}

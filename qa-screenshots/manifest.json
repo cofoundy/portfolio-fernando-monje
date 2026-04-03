@@ -1,0 +1,28 @@
+{
+  "url": "https://fernando-monje.cofoundy.dev",
+  "timestamp": "2026-04-03T09:35:35.343Z",
+  "desktop": {
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "full": {
+      "file": "desktop-full.png",
+      "fileSize": "28KB"
+    },
+    "sections": [],
+    "pageHeight": 332
+  },
+  "mobile": {
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "full": {
+      "file": "mobile-full.png",
+      "fileSize": "25KB"
+    },
+    "sections": [],
+    "pageHeight": 332
+  }
+}
