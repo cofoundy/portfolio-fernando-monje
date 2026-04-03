@@ -1,0 +1,25 @@
+# Decap CMS — Blog mode
+# Auth: Google OAuth via Railway proxy
+backend:
+  name: github
+  repo: cofoundy/portfolio-fernando-monje
+  branch: main
+  base_url: https://decap-oauth-proxy-production.up.railway.app
+
+site_url: https://fernando-monje.cofoundy.dev
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción", name: "description", widget: "string" }
+      - { label: "Fecha", name: "pubDate", widget: "datetime" }
+      - { label: "Imagen Principal", name: "heroImage", widget: "image", required: false }
+      - { label: "Contenido", name: "body", widget: "markdown" }
