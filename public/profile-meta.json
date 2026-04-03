@@ -6,7 +6,7 @@
   "recommended_photo_side": "either",
   "size": 800,
   "qa": {
-    "offset_x": 2,
-    "offset_y": 2
+    "offset_x": 3,
+    "offset_y": 1
   }
 }

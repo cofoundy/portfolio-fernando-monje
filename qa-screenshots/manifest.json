@@ -1,6 +1,6 @@
 {
   "url": "https://fernando-monje.cofoundy.dev",
-  "timestamp": "2026-04-03T09:35:35.343Z",
+  "timestamp": "2026-04-03T09:38:49.295Z",
   "desktop": {
     "viewport": {
       "width": 1280,
@@ -8,10 +8,47 @@
     },
     "full": {
       "file": "desktop-full.png",
-      "fileSize": "28KB"
+      "fileSize": "442KB"
     },
-    "sections": [],
-    "pageHeight": 332
+    "sections": [
+      {
+        "file": "desktop-hero.png",
+        "section": "hero",
+        "height": 668,
+        "fileSize": "102KB"
+      },
+      {
+        "file": "desktop-about.png",
+        "section": "about",
+        "height": 497,
+        "fileSize": "76KB"
+      },
+      {
+        "file": "desktop-projects.png",
+        "section": "projects",
+        "height": 548,
+        "fileSize": "70KB"
+      },
+      {
+        "file": "desktop-experience.png",
+        "section": "experience",
+        "height": 1084,
+        "fileSize": "137KB"
+      },
+      {
+        "file": "desktop-education.png",
+        "section": "education",
+        "height": 366,
+        "fileSize": "22KB"
+      },
+      {
+        "file": "desktop-footer-5.png",
+        "section": "footer-5",
+        "height": 205,
+        "fileSize": "18KB"
+      }
+    ],
+    "pageHeight": 3395
   },
   "mobile": {
     "viewport": {
@@ -20,9 +57,46 @@
     },
     "full": {
       "file": "mobile-full.png",
-      "fileSize": "25KB"
+      "fileSize": "384KB"
     },
-    "sections": [],
-    "pageHeight": 332
+    "sections": [
+      {
+        "file": "mobile-hero.png",
+        "section": "hero",
+        "height": 857,
+        "fileSize": "65KB"
+      },
+      {
+        "file": "mobile-about.png",
+        "section": "about",
+        "height": 1007,
+        "fileSize": "75KB"
+      },
+      {
+        "file": "mobile-projects.png",
+        "section": "projects",
+        "height": 1111,
+        "fileSize": "68KB"
+      },
+      {
+        "file": "mobile-experience.png",
+        "section": "experience",
+        "height": 1784,
+        "fileSize": "134KB"
+      },
+      {
+        "file": "mobile-education.png",
+        "section": "education",
+        "height": 346,
+        "fileSize": "19KB"
+      },
+      {
+        "file": "mobile-footer-5.png",
+        "section": "footer-5",
+        "height": 269,
+        "fileSize": "15KB"
+      }
+    ],
+    "pageHeight": 5402
   }
 }
