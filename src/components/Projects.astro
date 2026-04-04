@@ -10,7 +10,7 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
     <section id="projects" class="py-12 md:py-16 bg-gray-50">
       <div class="max-w-6xl mx-auto px-6 lg:px-8">
         <div class="mb-10 reveal-left">
-          <h2 class="text-3xl md:text-4xl font-bold" style={`color: ${siteConfig.accentColor}`}>Proyectos</h2>
+          <h2 class="text-3xl md:text-4xl font-bold" style={`color: ${siteConfig.accentColor}`}>Investigaciones</h2>
           <div class="w-16 h-1 mt-3 rounded-full" style={`background-color: ${siteConfig.highlightColor}`}></div>
         </div>
 
@@ -33,9 +33,16 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                   0{index + 1}
                 </div>
 
-                <h3 class="text-lg font-semibold mb-2" style={`color: ${siteConfig.accentColor}`}>
-                  {project.name}
-                </h3>
+                <div class="flex items-center gap-2 mb-2">
+                  <h3 class="text-lg font-semibold" style={`color: ${siteConfig.accentColor}`}>
+                    {project.name}
+                  </h3>
+                  {project.status && (
+                    <span class={`text-[10px] px-2 py-0.5 rounded-full font-semibold uppercase tracking-wide ${project.status === "Activa" ? "bg-green-100 text-green-700" : "bg-gray-100 text-gray-500"}`}>
+                      {project.status}
+                    </span>
+                  )}
+                </div>
                 <p class="text-sm text-gray-600 mb-4 leading-relaxed">
                   <Fragment set:html={project.description} />
                 </p>

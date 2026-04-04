@@ -20,6 +20,7 @@ export const siteConfig = {
     email: "Fernando.monje.bolivar@gmail.com",
     linkedin: "https://linkedin.com/in/nanoamonje",
     instagram: "https://instagram.com/nanoamonje",
+    whatsapp: "https://wa.me/51999448325",
   },
 
   aboutMe:
@@ -44,18 +45,21 @@ export const siteConfig = {
       description: "Investigación de tesis en el Laboratorio de Neurociencia, trabajando con análisis de señales electrofisiológicas (EEG), evaluación cognitiva y programación de experimentos con PsychoPy y MATLAB.",
       link: "",
       skills: ["EEG", "Python", "MATLAB", "PsychoPy"],
+      status: "Finalizada",
     },
     {
       name: "SERUMS — Hospital Santa Clotilde",
       description: "Servicio rural en la Amazonía peruana (Loreto), brindando atención psicológica clínica en un contexto de alta vulnerabilidad, recursos limitados y comunidades indígenas.",
       link: "",
       skills: ["Clínica", "Comunitario", "Salud Mental", "MINSA"],
+      status: "Activa",
     },
     {
       name: "Educa Impacta Crece (EIC)",
       description: "Psicólogo educativo facilitando actividades formativas y preventivas en salud mental para poblaciones jóvenes en Arequipa.",
       link: "",
       skills: ["Educación", "Prevención", "Formación"],
+      status: "Finalizada",
     },
   ],
 

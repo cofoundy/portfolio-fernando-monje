@@ -1,6 +1,6 @@
 {
   "url": "https://fernando-monje.cofoundy.dev",
-  "timestamp": "2026-04-03T09:38:49.295Z",
+  "timestamp": "2026-04-03T23:31:05.771Z",
   "desktop": {
     "viewport": {
       "width": 1280,
@@ -8,14 +8,14 @@
     },
     "full": {
       "file": "desktop-full.png",
-      "fileSize": "442KB"
+      "fileSize": "464KB"
     },
     "sections": [
       {
         "file": "desktop-hero.png",
         "section": "hero",
         "height": 668,
-        "fileSize": "102KB"
+        "fileSize": "124KB"
       },
       {
         "file": "desktop-about.png",
@@ -32,8 +32,8 @@
       {
         "file": "desktop-experience.png",
         "section": "experience",
-        "height": 1084,
-        "fileSize": "137KB"
+        "height": 1088,
+        "fileSize": "138KB"
       },
       {
         "file": "desktop-education.png",
@@ -48,7 +48,7 @@
         "fileSize": "18KB"
       }
     ],
-    "pageHeight": 3395
+    "pageHeight": 3399
   },
   "mobile": {
     "viewport": {
@@ -57,14 +57,14 @@
     },
     "full": {
       "file": "mobile-full.png",
-      "fileSize": "384KB"
+      "fileSize": "403KB"
     },
     "sections": [
       {
         "file": "mobile-hero.png",
         "section": "hero",
-        "height": 857,
-        "fileSize": "65KB"
+        "height": 889,
+        "fileSize": "84KB"
       },
       {
         "file": "mobile-about.png",
@@ -97,6 +97,6 @@
         "fileSize": "15KB"
       }
     ],
-    "pageHeight": 5402
+    "pageHeight": 5434
   }
 }
