@@ -1,76 +1,92 @@
 # QA Report: Fernando Monje Bolivar
 
-**Date:** 2026-04-03
+**Date:** 2026-04-04
 **URL:** https://fernando-monje.cofoundy.dev
-**Tier:** Pro (S/.120 upgrade + Blog CMS S/.120)
-**Status:** FAIL
+**Tier:** Pro (S/.120 upgrade + Blog CMS S/.120 = S/.160 total)
+**Status:** PASS WITH WARNINGS
 
 ## Technical Health
 - [x] HTML 200
-- [x] CSS 200 (`/_astro/index.Df_DGx_c.css`)
-- [x] Profile 200 (`/profile.png`)
-- [x] Favicon 200 (`/favicon.svg`)
-- [x] OG image — `/og.jpg` returns 200, BUT HTML meta tag references `/og.png` (404) **MISMATCH**
-- [x] Guia 200 (`/guia.pdf`)
-- [ ] CV 404 (`/cv.pdf`) — **Pro tier should have CV PDF**
+- [x] CSS 200 (`_astro/_slug_.eSAy0elh.css`)
+- [x] Profile image 200
+- [x] Favicon 200
+- [x] OG image 200
+- [x] Guia PDF 200
+- [x] CV PDF 200 (Pro tier)
+- [x] Blog listing `/blog` 200
+- [x] Blog post `/blog/bienvenida.md` 200
+- [ ] Blog post `/blog/bienvenida` (without .md) 404 — **WARNING**
 
 ## Visual — Desktop (1280px)
-- [x] CSS loaded — fully styled, green/white/black scheme applied
-- [x] Profile photo visible — renders correctly with green border, transparent bg works on light bg
+- [x] CSS loaded — site is fully styled with green accent theme
+- [x] Profile photo visible — clear photo with green gradient border frame
 - [x] Name correct — "Fernando Monje Bolivar" matches config.ts
-- [x] Title visible — "Psicologo Clinico | Investigador en Neurociencia"
-- [x] Colors match — dark green #166534 + emerald #22c55e as specified in config.ts and client preferences (white, black, green)
-- [x] Fonts loaded — Libre Baskerville + Source Sans 3 (Google Fonts preconnected)
-- [x] All 6 sections render — hero (with stats), about (with skills), projects (3), experience (7 entries with timeline), education, footer
+- [x] Title visible — "Psicólogo Clínico | Investigador en Neurociencia"
+- [x] Colors match — dark green #166534 accent + #22c55e highlight (matches config.ts)
+- [x] Fonts loaded — Libre Baskerville + Source Sans 3 from Google Fonts
+- [x] All sections render — Hero, About/Sobre Mi, Investigaciones, Experiencia, Educación, Footer (6 sections)
 - [x] No horizontal overflow
-- [x] Spacing consistent — clean section separation
-- [x] Footer — copyright 2026, name correct, social icons present (email, LinkedIn, Instagram)
+- [x] Spacing consistent
+- [x] Footer — copyright 2026, name correct, social icons present
+- [x] Tagline visible — "Psicología con vocación..."
+- [x] Stats row — "5+" / "UCSP" / "SERUMS" all visible
+- [x] Blog link in floating header nav
 
 ## Visual — Mobile (375px)
-- [x] Name fits — "Fernando Monje Bolivar" renders on two lines, no overflow
-- [x] Photo sized correctly — square with green border, not overflowing
-- [x] Nav mobile-friendly — floating pill nav only appears on scroll (desktop), hidden on mobile = clean
-- [x] Text legible — appropriate sizing throughout
-- [x] Cards stack vertically — projects and experience cards properly stacked
-- [x] No horizontal scroll — fits 375px width
-- [x] Stats readable — 5+, UCSP, SERUMS row displays correctly
-- [x] Contact info accessible — social icons (email, LinkedIn, Instagram) visible in hero and footer
+- [x] Name fits — "Fernando Monje Bolivar" renders cleanly, no overflow
+- [x] Photo sized correctly — proportional within green frame
+- [x] Text legible — appropriate font sizes
+- [x] Cards stack vertically — experience cards, project cards all stack
+- [x] No horizontal scroll — page fits 375px width
+- [x] Stats/metrics readable — stats row stacks properly
+- [x] Contact info accessible — social icons in hero and footer
+- [x] Investigaciones cards stack vertically with status badges visible
 
-## Client Preferences (form match)
-- [x] Style — Pro default (no specific style requested), pro-starter template used correctly
-- [x] Colors — white/black/green requested, delivered dark green + emerald green on white bg
-- [ ] N/A — Form never arrived at Sheet (2 failed attempts), preferences from WhatsApp/client-meta only
-- [x] Social links — LinkedIn (nanoamonje) and Instagram (@nanoamonje) both included
-- [x] Blog — Client paid for Blog CMS addon (not checked in this QA — separate /admin route)
+## Specific Checks (requested)
+- [x] WhatsApp icon in Hero social links — present (wa.me/51999448325)
+- [x] WhatsApp icon in Footer social links — present
+- [x] "Investigaciones" section heading renders
+- [x] Status badges: 1x "Activa" + 2x "Finalizada" — correct per config.ts
+- [x] "Blog" link in floating header nav — navigates to /blog
+- [x] Blog listing page renders correctly with post card
+- [x] Blog post page renders with full content, nav, and back link
+- [x] 7 experience entries rendered — all match config.ts
+- [x] 1 education entry rendered — UCSP, matches config.ts
+- [x] 3 projects/investigations rendered — all match config.ts
 
 ## Data Validation
-- [x] Name — "Fernando Monje Bolivar" matches research-notes.md (full: Fernando Alexander Monje Bolivar, display name shortened appropriately)
-- [x] Email — Fernando.monje.bolivar@gmail.com matches research-notes.md (Cloudflare email protection active)
-- [x] LinkedIn — linkedin.com/in/nanoamonje matches research-notes.md
-- [x] Instagram — @nanoamonje matches research-notes.md
-- [x] Companies — All 7 match research-notes.md: Hospital Santa Clotilde, Centro Psicotherapy, UCSP (2 roles), EIC, UCSP Social, G & D Foster Home
-- [x] Job titles — All match research-notes.md exactly
-- [x] Date ranges — All match research-notes.md
-- [x] Education — UCSP, Licenciado en Psicologia, C.Ps.P. 61795 — all verified
-- [x] Skills — All from research-notes.md (EEG, Python, MATLAB, PsychoPy, R, JASP, Jamovi)
+- [x] Name: "Fernando Monje Bolivar" — matches research-notes.md
+- [x] Email: Fernando.monje.bolivar@gmail.com — matches research-notes.md
+- [x] LinkedIn: linkedin.com/in/nanoamonje — matches research-notes.md
+- [x] Instagram: @nanoamonje — matches research-notes.md
+- [x] WhatsApp: 51999448325 — matches TRACKER phone number
+- [x] Companies match research: Hospital Santa Clotilde, Centro Psicotherapy, UCSP (x2), EIC, G&D Foster Home
+- [x] Job titles match research-notes.md
+- [x] Date ranges match research-notes.md
+- [x] Education: Licenciado en Psicología, UCSP — matches research
+- [x] Colegiado C.Ps.P. 61795 — in education achievements, matches research
 - [x] No hallucinated data detected
 
 ## Clean Deploy
 - [x] No template default names
-- [x] No placeholder text (Lorem ipsum, <<, undefined)
+- [x] No placeholder text or Lorem ipsum
+- [x] No "undefined" or "null" values
 - [x] No template default social links — all point to real profiles
-- [x] Social links point to real URLs (not # or javascript:void)
+- [x] Social links functional (LinkedIn, Instagram, WhatsApp all real URLs)
 
 ## Issues Found
 
-### CRITICAL
-1. **OG image meta tag mismatch** — HTML references `/og.png` but deployed file is `/og.jpg`. Social media previews (WhatsApp, LinkedIn, Facebook) will show a broken/missing image when the URL is shared. Fix: either rename og.jpg to og.png, or update the meta tag to reference og.jpg.
-
-### WARNING
-2. **CV PDF missing (404)** — Pro tier includes Harvard CV as a deliverable. `/cv.pdf` returns 404. Either the CV hasn't been generated yet, or it wasn't included in the deploy. If CV generation is pending (F5.5), note in TRACKER. If it was generated but not deployed, re-deploy.
+### WARNING: Blog post URL contains .md extension
+- **Severity:** WARNING
+- **Description:** The blog listing links to `/blog/bienvenida.md` (with .md extension). This URL works (200), but the clean URL `/blog/bienvenida` (without .md) returns 404. The Astro content collection uses `post.id` which includes the file extension. Should use `post.slug` instead of `post.id` for cleaner URLs.
+- **Impact:** Functional but non-standard URL pattern. When the client manages the blog via Decap CMS, all post URLs will have `.md` in them. Not user-friendly for sharing.
+- **Fix:** In `blog/index.astro` line 52: change `post.id` to `post.id.replace(/\.md$/, '')` or use `post.slug`. In `blog/[...slug].astro` line 9: same change for `getStaticPaths`.
 
 ## Evidence
 - desktop-full.png
 - mobile-full.png
-- desktop-hero.png, desktop-about.png, desktop-projects.png, desktop-experience.png, desktop-education.png, desktop-footer-5.png
-- mobile-hero.png, mobile-about.png, mobile-projects.png, mobile-experience.png, mobile-education.png, mobile-footer-5.png
+- desktop-hero.png (WhatsApp icon confirmed)
+- desktop-projects.png (Investigaciones + status badges confirmed)
+- desktop-footer-5.png (WhatsApp icon confirmed)
+- mobile-hero.png (name fits, photo OK)
+- mobile-projects.png (cards stack, badges visible)

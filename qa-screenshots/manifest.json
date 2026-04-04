@@ -1,6 +1,6 @@
 {
   "url": "https://fernando-monje.cofoundy.dev",
-  "timestamp": "2026-04-03T23:31:05.771Z",
+  "timestamp": "2026-04-04T19:07:24.242Z",
   "desktop": {
     "viewport": {
       "width": 1280,
@@ -8,14 +8,14 @@
     },
     "full": {
       "file": "desktop-full.png",
-      "fileSize": "464KB"
+      "fileSize": "675KB"
     },
     "sections": [
       {
         "file": "desktop-hero.png",
         "section": "hero",
-        "height": 668,
-        "fileSize": "124KB"
+        "height": 872,
+        "fileSize": "330KB"
       },
       {
         "file": "desktop-about.png",
@@ -27,7 +27,7 @@
         "file": "desktop-projects.png",
         "section": "projects",
         "height": 548,
-        "fileSize": "70KB"
+        "fileSize": "73KB"
       },
       {
         "file": "desktop-experience.png",
@@ -39,7 +39,7 @@
         "file": "desktop-education.png",
         "section": "education",
         "height": 366,
-        "fileSize": "22KB"
+        "fileSize": "23KB"
       },
       {
         "file": "desktop-footer-5.png",
@@ -48,7 +48,7 @@
         "fileSize": "18KB"
       }
     ],
-    "pageHeight": 3399
+    "pageHeight": 3603
   },
   "mobile": {
     "viewport": {
@@ -57,14 +57,14 @@
     },
     "full": {
       "file": "mobile-full.png",
-      "fileSize": "403KB"
+      "fileSize": "537KB"
     },
     "sections": [
       {
         "file": "mobile-hero.png",
         "section": "hero",
-        "height": 889,
-        "fileSize": "84KB"
+        "height": 1085,
+        "fileSize": "214KB"
       },
       {
         "file": "mobile-about.png",
@@ -75,8 +75,8 @@
       {
         "file": "mobile-projects.png",
         "section": "projects",
-        "height": 1111,
-        "fileSize": "68KB"
+        "height": 1167,
+        "fileSize": "73KB"
       },
       {
         "file": "mobile-experience.png",
@@ -88,15 +88,15 @@
         "file": "mobile-education.png",
         "section": "education",
         "height": 346,
-        "fileSize": "19KB"
+        "fileSize": "20KB"
       },
       {
         "file": "mobile-footer-5.png",
         "section": "footer-5",
         "height": 269,
-        "fileSize": "15KB"
+        "fileSize": "16KB"
       }
     ],
-    "pageHeight": 5434
+    "pageHeight": 5686
   }
 }
