@@ -1,0 +1,61 @@
+---
+import { getCollection } from "astro:content";
+import { siteConfig } from "../config";
+
+const posts = (await getCollection("blog"))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+<div class="w-full h-1 accent-bar-shimmer" style={`background: linear-gradient(90deg, ${siteConfig.accentColor} 0%, ${siteConfig.highlightColor} 50%, ${siteConfig.accentColor} 100%)`}></div>
+
+<section id="blog" class="py-12 md:py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-6 lg:px-8">
+    <div class="flex items-end justify-between mb-10">
+      <div class="reveal-left">
+        <h2 class="text-3xl md:text-4xl font-bold" style={`color: ${siteConfig.accentColor}`}>Blog</h2>
+        <div class="w-16 h-1 mt-3 rounded-full" style={`background-color: ${siteConfig.highlightColor}`}></div>
+      </div>
+      <a href="/blog" class="reveal-right text-sm font-medium flex items-center gap-1 transition-colors" style={`color: ${siteConfig.highlightColor}`}>
+        Ver todos
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </a>
+    </div>
+
+    {posts.length === 0 ? (
+      <p class="text-gray-500 text-center py-8 reveal">Próximamente publicaré nuevos artículos.</p>
+    ) : (
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {posts.map((post, index) => (
+          <a
+            href={`/blog/${post.id.replace(/\.md$/, "")}`}
+            class={`reveal stagger-${index + 1} group card-hover card-shine block p-6 rounded-xl bg-gray-50`}
+            style={`border: 1px solid ${siteConfig.accentColor}15`}
+          >
+            <time class="text-xs text-gray-400" datetime={post.data.pubDate.toISOString()}>
+              {post.data.pubDate.toLocaleDateString("es-PE", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </time>
+            <h3 class="text-lg font-semibold mt-2 mb-2 group-hover:opacity-80 transition-opacity" style={`color: ${siteConfig.accentColor}`}>
+              {post.data.title}
+            </h3>
+            <p class="text-sm text-gray-600 leading-relaxed line-clamp-3">
+              {post.data.description}
+            </p>
+            <span class="inline-flex items-center gap-1 mt-4 text-sm font-medium transition-all duration-300 group-hover:gap-2" style={`color: ${siteConfig.highlightColor}`}>
+              Leer más
+              <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </span>
+          </a>
+        ))}
+      </div>
+    )}
+  </div>
+</section>
