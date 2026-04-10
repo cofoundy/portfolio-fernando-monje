@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Fernando Monje Bolivar",
+  name: "Fernando Alexander Monje Bolivar",
   title: "Psicólogo Clínico | Investigador en Neurociencia",
   description: "Psicólogo licenciado con experiencia en clínica, neurociencia, educación y trabajo comunitario. Actualmente realizando SERUMS en la Amazonía peruana.",
 
