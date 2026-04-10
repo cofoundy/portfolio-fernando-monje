@@ -21,6 +21,7 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/in/nanoamonje",
     instagram: "https://instagram.com/nanoamonje",
     whatsapp: "https://wa.me/51999448325",
+    Youtube: "https://www.youtube.com/@nanoamonjeb"
   },
 
   aboutMe:
