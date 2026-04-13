@@ -13,5 +13,3 @@ Porque aunque no me convertí en lo que imaginé, tampoco desaparecí. Aguanté.
 Cumplir años, para mí, es un ajuste de cuentas. Un momento en que el pasado se sienta a mi lado y me recuerda todo lo que no fui. Pero también me recuerda algo más.
 
 No soy la persona que aspire ser... pero me estoy acercando, estoy mejorando.
-
-No escribo esto desde la admiración propia. Lo escribo desde la intemperie.
